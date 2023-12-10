@@ -32,5 +32,5 @@ The project consists of the following main components:
 
 ## Feature Images
 
-![Theater Selection](movies_world.png)
+![Theater Selection](movies_world.PNG)
 
