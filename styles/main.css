@@ -1,11 +1,12 @@
+/* Set the base font, margin, background, and text color for the entire document */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-
     background-color: #f4f4f4;
     color: #333;
 }
 
+/* Ensure the main content area takes up the full height minus header and footer, and add padding */
 main {
     min-height: calc(100vh - 160px); 
     padding-bottom: 70px; 
@@ -13,6 +14,7 @@ main {
     padding-right: 20px;
 }
 
+/* Style the header with a dark background, white text, and centered alignment */
 header {
     background: #333;
     color: #fff;
@@ -20,6 +22,7 @@ header {
     padding: 1rem 0;
 }
 
+/* Style the footer to always stay at the bottom of the viewport, with a fixed height and dark theme */
 footer {
     background: #333;
     color: #fff;
@@ -28,14 +31,16 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 60px; /* Define a fixed height for the footer */
+    height: 60px;
 }
 
+/* Style the theater search container to center its content */
 #theater-search-container {
     text-align: center;
     margin: 20px;
 }
 
+/* Style the theater search input with width, padding, and rounded borders */
 #theater-search-bar {
     width: 50%;
     padding: 10px;
@@ -43,6 +48,7 @@ footer {
     margin-right: 10px;
 }
 
+/* Style the search button with matching rounded borders, background, and color */
 #theater-search-button {
     border-radius: 20px;
     padding: 10px;
@@ -52,15 +58,15 @@ footer {
     cursor: pointer;
 }
 
+/* Add hover effect for the search button with a gold border */
 #theater-search-button:hover {
-    border-radius: 20px;
-    padding: 10px;
     background: #333;
     color: #fff;
-    border: 1px solid #FFD700;;
+    border: 1px solid #FFD700;
     cursor: pointer;
 }
 
+/* Grid layout for theater cards, automatically adjusting the number of columns based on screen size */
 .theaters-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -69,12 +75,12 @@ footer {
     margin-bottom: 70px; 
 }
 
-
-
+/* Scale up theater cards slightly on hover for a visual feedback effect */
 .theater-card:hover {
     transform: scale(1.05);
 }
 
+/* Basic style for theater cards, with flexbox for layout and shadow for depth */
 .theater-card {
     background: #fff;
     color: #333;
@@ -82,66 +88,57 @@ footer {
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     transition: transform 0.2s ease-in-out;
- 
-    display: flex; /* Using flexbox */
-    flex-direction: column; /* Stack flex items vertically */
-    justify-content: center; /* Center vertically */
-    align-items: bottom; 
- 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: bottom;
 }
 
+/* Style and fit the theater image to each card */
 .theater-card img {
     width: 100%;
     height: 150px;
     object-fit: cover;
 }
 
+/* Style the theater info section inside each card */
 .theater-card .theater-info {
-   
     text-align: center;
     flex-grow: 1;
-
-   
-    
 }
 
+/* Adjust the font size of the theater name to ensure it fits nicely within the card */
 .theater-card .theater-info h2 {
-    font-size: 1.1em; /* Reduce the font size */
+    font-size: 1.1em;
 }
 
-
+/* Center the 'Current Movies' button within its container */
 .theater-button-div {
     display: flex;
     justify-content: center;
     align-items: center;
-    display: flex; /* Using flexbox */
-    flex-direction: column; /* Stack flex items vertically */
-    justify-content: center; /* Center vertically */
-    align-items: bottom; 
-    padding-bottom: 20px;/* Center horizontally */
+    padding-bottom: 20px;
 }
 
+/* Style the 'Current Movies' button with the Finnkino brand color, bold text, and spacing */
 .theater-card .current-movies-btn {
-    background-color: #FFD700; /* Finnkino yellow */
+    background-color: #FFD700;
     color: black;
     font-weight: bold;
     border: none;
     padding: 0.5rem 1rem;
-    margin-top: 0.5rem; /* Spacing from the bottom of the card */
+    margin-top: 0.5rem;
     cursor: pointer;
-    border-radius: 5px; /* Optional for rounded corners */
-    display: flex; /* To align icon and text */
-    align-items: center; /* Align items vertically */
-    justify-content: center; /* Center items horizontally */
-    gap: 0.5rem; /* Space between icon and text */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
 }
 
-
-
+/* Style the film strip icon next to the 'Current Movies' button text */
 .theater-card .current-movies-btn .film-strip-icon {
-    /* Adjust the width and height as needed */
     width: 20px;
     height: 20px;
-    margin-right: 10px; /* Add some space between the icon and the text */
+    margin-right: 10px;
 }
-

@@ -1,32 +1,45 @@
 <!DOCTYPE html>
+<!-- The HTML5 doctype declaration, necessary for proper rendering and functionality -->
 <html lang="en">
 <head>
+    <!-- Meta tag for specifying the character set for the HTML document -->
     <meta charset="UTF-8">
+    <!-- Meta tag for setting the viewport for responsive web design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The title of the webpage -->
     <title>Movies World</title>
+    <!-- Link to the external stylesheet for this page -->
     <link rel="stylesheet" href="styles/movies.css">
 </head>
 <body>
+    <!-- Header of the page, containing the site title -->
     <header>
         <h1>Movies World</h1>
-        <p id="theater-showing-text"></p>
+        <!-- Paragraph where the selected theater's name will be displayed -->
+        <p id="theater-showing-text">Currently showing at </p>
     </header>
+    <!-- Main content area of the page -->
     <main>
+        <!-- Search bar container for movie search functionality -->
         <div id="search-container">
             <input type="text" id="search-bar" placeholder="Search for a movie...">
             <button id="search-button">Search</button>
         </div>
 
+        <!-- Area to display the result info of the movie search -->
         <h2 id="movie-search-result-info" style="text-align: center;"></h2>
         
+        <!-- Container that will hold the movie cards, populated dynamically with JavaScript -->
         <div id="movies-container" class="movies-grid">
             <!-- Movie items will be inserted here using JavaScript -->
         </div>
         
     </main>
+    <!-- Footer section with copyright notice -->
     <footer>
         <p>© 2023 Movies World - Developed by Linh Mai</p>
     </footer>
+    <!-- Script tag linking to the external JavaScript file for this page -->
     <script src="scripts/movies.js"></script>
 </body>
 </html>

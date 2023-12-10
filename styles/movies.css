@@ -1,3 +1,4 @@
+/* Set the base font, margin, background, and text color for the entire document */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,6 +7,7 @@ body {
     color: #333;
 }
 
+/* Style the header with a dark background, white text, and centered alignment */
 header {
     background: #333;
     color: #fff;
@@ -13,13 +15,15 @@ header {
     padding: 1rem 0;
 }
 
+/* Ensure the main content area takes up the full height minus header and footer, and add padding */
 main {
-    min-height: calc(100vh - 160px); 
-    padding-bottom: 70px; 
+    min-height: calc(100vh - 160px);
+    padding-bottom: 70px;
     padding-left: 20px;
     padding-right: 20px;
 }
 
+/* Style the footer to always stay at the bottom of the page with a dark theme */
 footer {
     background: #333;
     color: #fff;
@@ -30,18 +34,21 @@ footer {
     width: 100%;
 }
 
+/* Style the movie search container to center its content */
 #search-container {
     text-align: center;
     margin: 20px;
 }
 
+/* Style the movie search input with width, padding, and rounded borders */
 #search-bar {
     width: 50%;
     padding: 10px;
-    margin-right: 10px;
     border-radius: 20px;
+    margin-right: 10px;
 }
 
+/* Style the search button with matching rounded borders, background, and color */
 #search-button {
     padding: 10px;
     border-radius: 20px;
@@ -51,33 +58,35 @@ footer {
     cursor: pointer;
 }
 
+/* Add hover effect for the search button with a gold border */
 #search-button:hover {
-    padding: 10px;
-    border-radius: 20px;
     background: #333;
     color: #fff;
     border: 1px solid #FFD700;
 }
 
+/* Additional padding at the bottom of the movie container */
 .movie-container {
     padding-bottom: 70px;
 }
 
+/* Grid layout for movie cards, automatically adjusting the number of columns based on screen size */
 .movies-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 1.5rem;
     padding: 1rem;
-    margin-bottom: 70px; 
-
+    margin-bottom: 70px;
 }
 
+/* Styling for the movie plot with a smaller font size and white color */
 .movie-plot {
     font-size: 0.9rem;
     color: #fff;
     margin-bottom: 40px;
 }
 
+/* Styling for the movie title with a larger font size, bold font weight, and yellow color */
 .movie-title {
     font-size: 1.2rem;
     font-weight: bold;
@@ -85,6 +94,7 @@ footer {
     margin: 10px;
 }
 
+/* Basic style for movie cards with a dark background, white text, and a shadow for depth */
 .movie-card {
     background: #333;
     color: #fff;
@@ -94,10 +104,12 @@ footer {
     transition: transform 0.2s ease-in-out;
 }
 
+/* Scale up movie cards slightly on hover for a visual feedback effect */
 .movie-card:hover {
     transform: scale(1.05);
 }
 
+/* Style and fit the movie image to each card with rounded bottom corners */
 .movie-card img {
     width: 100%;
     height: auto;
@@ -105,39 +117,38 @@ footer {
     border-radius: 0 0 20px 20px;
 }
 
+/* Style the movie info section inside each card */
 .movie-card .movie-info {
     padding: 0.5rem;
     text-align: center;
 }
 
+/* Flexbox container for the 'Buy Tickets' button to center it horizontally */
 .ticket-btn-container {
     display: flex;
     justify-content: center;
 }
 
+/* Style the 'Buy Tickets' button with the Finnkino brand color, bold text, and spacing */
 .movie-tickets-btn {
-    background-color: #FFD700; /* Finnkino yellow */
+    background-color: #FFD700;
     color: black;
     font-weight: bold;
     border: none;
     padding: 0.5rem 1rem;
     margin-top: 0.5rem;
-    margin-bottom: 10px; /* Spacing from the bottom of the card */
+    margin-bottom: 10px;
     cursor: pointer;
-    border-radius: 5px; /* Optional for rounded corners */
-    display: flex; /* To align icon and text */
-    align-items: center; /* Align items vertically */
-    justify-content: center; /* Center items horizontally */
-    gap: 0.5rem; /* Space between icon and text */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
 }
 
+/* Apply bold font weight, yellow color, and larger size for the theater name style */
 .theater-name-style {
     font-weight: bold;
-    color: #FFD700; /* Finnkino yellow, adjust color code if needed */
-    font-size: larger; /* Adjust size as needed */
+    color: #FFD700;
+    font-size: larger;
 }
-
-
-
-
-

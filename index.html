@@ -1,33 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Standard UTF-8 character set to support international characters -->
     <meta charset="UTF-8">
+    <!-- Viewport settings to ensure the site is responsive and scales well on different devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage, displayed in the browser tab -->
     <title>Movies World - Theaters</title>
+    <!-- Link to the main stylesheet for styling the page -->
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
+    <!-- Header section containing the welcome message -->
     <header>
         <h1>Welcome to Movies World</h1>
         <p>Select a theater to see what's playing</p>
     </header>
+    <!-- Main content area -->
     <main>
+        <!-- Search container with input and button for searching theaters -->
         <div id="theater-search-container">
             <input type="text" id="theater-search-bar" placeholder="Search for a theater...">
             <button id="theater-search-button">Search</button>
         </div>
 
+        <!-- Area where search results or messages will be displayed -->
         <h2 id="search-result-info" style="text-align: center;"></h2>
 
-        
+        <!-- Container for the dynamically loaded theater cards -->
         <div id="theaters-container" class="theaters-grid">
             <!-- Theater items will be inserted here using JavaScript -->
         </div>
         
     </main>
+    <!-- Footer section with copyright notice -->
     <footer>
         <p>© 2023 Movies World - Developed by Linh Mai</p>
     </footer>
+    <!-- Link to the main JavaScript file that handles dynamic content loading -->
     <script src="scripts/main.js"></script>
 </body>
 </html>

@@ -61,6 +61,7 @@ function getDate() {
 
 // Function to fetch movie details from the OMDB API
 function fetchMovieDetails(movieTitle) {
+    // API key is required for the OMDB API, used here for demonstration purposes only
     const apiKey = '3f20b27d'; 
     const url = `https://www.omdbapi.com/?t=${encodeURIComponent(movieTitle)}&apikey=${apiKey}`;
 
