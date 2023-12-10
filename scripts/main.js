@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 function fetchTheaterAreas() {
-  const areasUrl = "http://www.finnkino.fi/xml/TheatreAreas/";
+  const areasUrl = "https://www.finnkino.fi/xml/TheatreAreas/";
   fetch(areasUrl)
     .then((response) => response.text()) // Parse the XML text response
     .then((str) => new window.DOMParser().parseFromString(str, "text/xml"))

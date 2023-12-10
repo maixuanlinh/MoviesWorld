@@ -13,7 +13,7 @@ const fetchedTitles = new Set();
 
 function fetchMoviesForTheater(theaterId, theaterName) {
     // Fetch the theater name and set it to the #theater-showing-text element
-    const theaterAreasUrl = `http://www.finnkino.fi/xml/TheatreAreas/`;
+    const theaterAreasUrl = `https://www.finnkino.fi/xml/TheatreAreas/`;
     fetch(theaterAreasUrl)
         .then(response => response.text())
         .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
@@ -32,7 +32,7 @@ function fetchMoviesForTheater(theaterId, theaterName) {
         });
 
     // Continue with fetching the movies
-    const scheduleUrl = `http://www.finnkino.fi/xml/Schedule/?area=${theaterId}&dt=${getDate()}`;
+    const scheduleUrl = `https://www.finnkino.fi/xml/Schedule/?area=${theaterId}&dt=${getDate()}`;
     fetch(scheduleUrl)
         .then(response => response.text())
         .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
