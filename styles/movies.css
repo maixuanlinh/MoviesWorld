@@ -13,6 +13,13 @@ header {
     padding: 1rem 0;
 }
 
+main {
+    min-height: calc(100vh - 160px); 
+    padding-bottom: 70px; 
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 footer {
     background: #333;
     color: #fff;
@@ -32,21 +39,50 @@ footer {
     width: 50%;
     padding: 10px;
     margin-right: 10px;
+    border-radius: 20px;
 }
 
 #search-button {
     padding: 10px;
+    border-radius: 20px;
     background: #333;
     color: #fff;
     border: none;
     cursor: pointer;
 }
 
+#search-button:hover {
+    padding: 10px;
+    border-radius: 20px;
+    background: #333;
+    color: #fff;
+    border: 1px solid #FFD700;
+}
+
+.movie-container {
+    padding-bottom: 70px;
+}
+
 .movies-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1rem;
+    gap: 1.5rem;
     padding: 1rem;
+    margin-bottom: 70px; 
+
+}
+
+.movie-plot {
+    font-size: 0.9rem;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.movie-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #FFD700;
+    margin: 10px;
 }
 
 .movie-card {
@@ -66,12 +102,41 @@ footer {
     width: 100%;
     height: auto;
     display: block;
+    border-radius: 0 0 20px 20px;
 }
 
 .movie-card .movie-info {
     padding: 0.5rem;
     text-align: center;
 }
+
+.ticket-btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.movie-tickets-btn {
+    background-color: #FFD700; /* Finnkino yellow */
+    color: black;
+    font-weight: bold;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 10px; /* Spacing from the bottom of the card */
+    cursor: pointer;
+    border-radius: 5px; /* Optional for rounded corners */
+    display: flex; /* To align icon and text */
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center items horizontally */
+    gap: 0.5rem; /* Space between icon and text */
+}
+
+.theater-name-style {
+    font-weight: bold;
+    color: #FFD700; /* Finnkino yellow, adjust color code if needed */
+    font-size: larger; /* Adjust size as needed */
+}
+
 
 
 
