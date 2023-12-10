@@ -1,8 +1,12 @@
 # Movies World Web App
 
-Welcome to the *Movies World* web app, a vibrant web app built using the classic trio of web development: plain JavaScript, HTML, and CSS. This project is a testament to the power of these core technologies, as no additional libraries are used.
+- Welcome to the *Movies World* web app, a vibrant web app built using the classic trio of web development: plain JavaScript, HTML, and CSS. 
+- This project is a testament to the power of these core technologies, as no additional libraries are used.
+- This project is to complete the Project 2 at Laurea University of Applied Sciences' Javascript course
 
-This project is to complete the Project 2 at Laurea University of Applied Sciences' Javascript course
+## Feature Images
+
+![Theater Selection](movies_world.PNG)
 
 ## Deployment
 
@@ -30,7 +34,5 @@ The project consists of the following main components:
 - **Search Functionality**: Both theaters and movies can be searched through a responsive search bar.
 - **Dynamic Content**: Movie and theater information is fetched in real-time from the Finnkino API & OMDB.
 
-## Feature Images
 
-![Theater Selection](movies_world.PNG)
 
