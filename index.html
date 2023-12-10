@@ -3,23 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movies World</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Movies World - Theaters</title>
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
     <header>
-        <h1>Movies World</h1>
+        <h1>Welcome to Movies World</h1>
+        <p>Select a theater to see what's playing</p>
     </header>
     <main>
-        <div id="search-container">
-            <input type="text" id="search-bar" placeholder="Search for a movie...">
-            <button id="search-button">Search</button>
+        <div id="theater-search-container">
+            <input type="text" id="theater-search-bar" placeholder="Search for a theater...">
+            <button id="theater-search-button">Search</button>
+        </div>
+        
+        <div id="theaters-container" class="theaters-grid">
+            <!-- Theater items will be inserted here using JavaScript -->
         </div>
         
     </main>
     <footer>
         <p>© 2023 Movies World</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>

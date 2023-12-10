@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#theater-search-container {
+    text-align: center;
+    margin: 20px;
+}
+
+#theater-search-bar {
+    width: 50%;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+#theater-search-button {
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.theaters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.theater-card {
+    background: #fff;
+    color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.theater-card:hover {
+    transform: scale(1.05);
+}
+
+.theater-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.theater-card .theater-info {
+    padding: 0.5rem;
+    text-align: center;
+}
+
+
