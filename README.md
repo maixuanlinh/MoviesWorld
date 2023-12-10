@@ -14,6 +14,10 @@ The app is deployed on Azure Static Web Apps, and it can be accessed live via th
 
 [https://victorious-mud-0ca3b1803.4.azurestaticapps.net](https://victorious-mud-0ca3b1803.4.azurestaticapps.net)
 
+## VIDEO Presentation
+Accessible via Youtube Link:
+[https://youtu.be/ijHHF_itvsI](https://youtu.be/ijHHF_itvsI)
+
 ## Project Structure
 
 The project consists of the following main components:
